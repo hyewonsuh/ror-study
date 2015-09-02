@@ -7,6 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 Depot::Application.routes.draw do
+  resources :orders
   resources :line_items
   resources :line_items
   resources :carts
@@ -19,6 +20,9 @@ Depot::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'store#index', as: 'store'
+  resources :products do
+    get :who_bought, on: :member
+  end
   # ...
 
   # Example of regular route:
