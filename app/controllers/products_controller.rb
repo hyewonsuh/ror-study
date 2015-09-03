@@ -7,7 +7,7 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy, :who_bought]
+    before_action :set_product, only: [:show, :edit, :update, :destroy, :who_bought]
 
   # GET /products
   # GET /products.json
