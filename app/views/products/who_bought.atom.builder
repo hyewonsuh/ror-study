@@ -29,7 +29,8 @@ atom_feed do |feed|
         xhtml.p "Paid by #{order.pay_type}"
       end
       entry.author do |author|
-        author.name order.name author.email order.email
+        author.name order.name
+        author.email order.email
       end
     end
   end
