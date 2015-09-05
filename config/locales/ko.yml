@@ -1,0 +1,65 @@
+ko:
+  layouts:
+    application:
+      title:       "꼭 필요한 책방"
+      home:        "홈"
+      questions:   "문의"
+      news:        "뉴스"
+      contact:     "컨택"
+
+  store:
+    index:
+      title_html: "책 목록"
+      add_html: "장바구니 담기"
+
+  carts:
+    cart:
+      title: "장바구니"
+      empty: "비우기"
+      checkout: "체크아웃"
+
+  number:
+    currency:
+      format:
+        unit: "원"
+        precision: 2
+        separator: "."
+        delimiter: ","
+        format: "%u%n"
+
+  orders:
+    new:
+      legend: "주문에 필요한 정보를 입력하세요"
+    form:
+      name: "이름"
+      address_html: "주소"
+      email: "이메일"
+      pay_type: "결제 방식"
+      pay_prompt_html: "결제방식을 선택하세요"
+      submit: "주문하기"
+
+
+  activerecord:
+    errors:
+      messages:
+        inclusion: " 선택하세요"
+        blank: "(은/는) 필수 입력값입니다."
+
+  errors:
+    template:
+      body:        "입력값에 문제가 있습니다."
+      header:
+        one:       "%{model}정보를 저장하는데 에러가 발생했습니다. "
+        other:     "%{count}개의 에러가 발생하여 %{model}정보를 저장하지 못했습니다. "
+
+  activerecord:
+    models:
+      order: "주문"
+    attributes:
+      order:
+        address: "주소"
+        name: "이름"
+        email: "이메일"
+        pay_type: "결제방식"
+
+  thanks: "주문해 주셔서 감사합니다."
